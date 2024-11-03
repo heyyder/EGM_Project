@@ -69,5 +69,6 @@ public class PlayerMovement : MonoBehaviour
                                                     0.1f, 
                                                     groundLayer);
         return raycast.collider == null;
-    }     
+    }
+
 }
