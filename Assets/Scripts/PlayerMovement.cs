@@ -26,16 +26,16 @@ public class PlayerMovement : MonoBehaviour
         //Move player based on horizontal input
         float horInput = Input.GetAxis("Horizontal"); 
         pbody.velocity = new Vector2(horInput * pspeed, pbody.velocity.y);
-
+        /*
         //Flip player sprite based on direction
         if (horInput > 0.01f)
         {
-            transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
+            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         }
         else if (horInput < -0.01f)
         {
-            transform.localScale = new Vector3(-0.75f, 0.75f, 0.75f);
-        }
+            transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
+        }*/
 
         //Jump
         if (Input.GetKey(KeyCode.Space) && !isJumping())
